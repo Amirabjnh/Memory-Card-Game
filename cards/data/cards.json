@@ -1,0 +1,38 @@
+[
+    {
+        "image": "assets/bassit.jpg",
+        "name": "bassit"
+    },
+    {
+        "image": "assets/lo2lou2a.jpg",
+        "name": "lo2lou2a"
+    },
+    {
+        "image": "assets/rajel.jpg",
+        "name": "rajel"
+    },
+    {
+        "image": "assets/salta.jpg",
+        "name": "salta"
+    },
+    {
+        "image": "assets/sandy.jpg",
+        "name": "sandy"
+    },
+    {
+        "image": "assets/seri3.jpg",
+        "name": "seri3"
+    },
+    {
+        "image": "assets/shafik.jpg",
+        "name": "shafik"
+    },
+    {
+        "image": "assets/shamshoun.jpg",
+        "name": "shamshoun"
+    },
+    {
+        "image": "assets/spongebob.jpg",
+        "name": "spongebob"
+    }
+]

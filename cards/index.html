@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <!-- Bouton de commutation du son -->
+  <input type="checkbox" id="checkboxInput" checked />
+  <label for="checkboxInput" class="toggleSwitch green" onclick="toggleSound()">
+    <!-- Icône du haut-parleur -->
+    <div class="speaker">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.0" viewBox="0 0 75 75">
+        <!-- Chemin pour le haut-parleur -->
+        <path
+          d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z"
+          style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"
+        ></path>
+        <!-- Autre chemin pour le haut-parleur -->
+        <path
+          d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6"
+          style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"
+        ></path>
+      </svg>
+    </div>
+    <!-- Icône du haut-parleur muet -->
+    <div class="mute-speaker">
+      <svg version="1.0" viewBox="0 0 75 75" stroke="#fff" stroke-width="5">
+        <path
+          d="m39,14-17,15H6V48H22l17,15z"
+          fill="#fff"
+          stroke-linejoin="round"
+        ></path>
+        <path
+          d="m49,26 20,24m0-24-20,24"
+          fill="#fff"
+          stroke-linecap="round"
+        ></path>
+      </svg>
+    </div>
+  </label>
+  <!-- Élément audio pour la musique de fond -->
+  <audio id="myAudio" controls autoplay loop>
+    <!-- Source de la musique -->
+    <source src="SpongeBob SquarePants Closing Theme Song (INCOMPLETE).mp3" type="audio/mpeg">
+  </audio>
+    <!-- Titre du jeu -->
+    <h1><img src="tit.png" alt=""></h1>
+    <!-- Conteneur pour la grille de cartes -->
+    <div class="grid-container">
+    </div>
+    <!-- Affichage du score -->
+    <p>Score: <span class="score"></span></p>
+    <!-- Message de félicitations -->
+    <div class="message" style="display: none;">
+      <img src="cong.png" alt="">
+      <!-- Bouton pour redémarrer le jeu -->
+      <button onclick="restart()"><img src="rest.png" alt=""></button>
+    </div>
+    <!-- Inclusion du fichier JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>
+
